@@ -29,7 +29,7 @@ def doLogin(request, **kwargs):
     else:
         #Google recaptcha
         captcha_token = request.POST.get('g-recaptcha-response')
-        captcha_url = "https://www.google.com/recaptcha/api/siteverify"
+        captcha_url =  "https://www.google.com/recaptcha/api/siteverify"
         captcha_key = "6LdtAzMmAAAAAFlPKaK8OmATy6WcW9F_hic5IJ8X"
         data = {
             'secret': captcha_key,
